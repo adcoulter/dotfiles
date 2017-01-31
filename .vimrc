@@ -9,9 +9,14 @@ set number
 set ruler
 
 "whitespace
+set nowrap
 set tabstop=2
 set shiftwidth=2
 set expandtab
+set list listchars=tab:\ \ ,trail:·
+
+"Automatically remove trailing whitespace
+autocmd FileType ruby,python,javascript,java autocmd BufWritePre <buffer> :%s/\s\+$//e
 
 "colorscheme
 syntax enable
@@ -37,7 +42,13 @@ noremap <leader>t :CtrlP <Enter>
 let g:ctrlp_working_path_mode = 2
 let g:ctrlp_custom_ignore = '\v[\/](node_modules|vendor)|(\.(swp|ico|git))$'
 
-" Directories for swp files
+"rubocop
+"syntastic
+let g:syntastic_enable_signs=1
+let g:syntastic_ruby_checkers = ['rubocop']
+
+"Directories for swp files
 set backupdir=~/.vim/backup
 set directory=~/.vim/backup
+
 
