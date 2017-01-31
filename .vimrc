@@ -20,6 +20,10 @@ set list listchars=tab:\ \ ,trail:·
 "Automatically remove trailing whitespace
 autocmd FileType ruby,python,javascript,java autocmd BufWritePre <buffer> :%s/\s\+$//e
 
+"Automatically run prettier js formatter on js
+autocmd FileType javascript set formatprg=prettier\ --single-quote=true\ --write
+autocmd BufWritePre *.js :normal gggqG
+
 "colorscheme
 syntax enable
 set background=dark
