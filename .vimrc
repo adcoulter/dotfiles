@@ -3,6 +3,8 @@ syntax on
 
 filetype plugin indent on
 
+let mapleader=","
+
 set clipboard=unnamed
 set colorcolumn=80
 set number
