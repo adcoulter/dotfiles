@@ -17,6 +17,14 @@ set shiftwidth=2
 set expandtab
 set list listchars=tab:\ \ ,trail:·
 
+"searching
+set hlsearch
+set incsearch
+set ignorecase
+set smartcase
+noremap <silent><Leader>/ :noh <CR>
+nnoremap <leader><space> :noh<cr>
+
 "Automatically remove trailing whitespace
 autocmd FileType ruby,python,javascript,java autocmd BufWritePre <buffer> :%s/\s\+$//e
 
@@ -53,8 +61,9 @@ let g:ctrlp_custom_ignore = '\v[\/](node_modules|vendor)|(\.(swp|ico|git))$'
 let g:syntastic_enable_signs=1
 let g:syntastic_ruby_checkers = ['rubocop']
 
+"autoread changes from disk
+set autoread
+
 "Directories for swp files
 set backupdir=~/.vim/backup
 set directory=~/.vim/backup
-
-
