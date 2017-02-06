@@ -1,8 +1,5 @@
 execute pathogen#infect()
-syntax on
-
-filetype plugin indent on
-
+syntax on filetype plugin indent on 
 let mapleader=","
 
 set clipboard=unnamed
@@ -30,7 +27,7 @@ autocmd FileType ruby,python,javascript,java autocmd BufWritePre <buffer> :%s/\s
 
 "Automatically run prettier js formatter on js
 autocmd FileType javascript set formatprg=prettier\ --single-quote=true\ --write
-autocmd BufWritePre *.js :normal gggqG
+autocmd BufWritePre *.js :normal gggqGg;g;
 
 "colorscheme
 syntax enable
