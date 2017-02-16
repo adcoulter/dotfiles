@@ -13,3 +13,6 @@
 [submodule ".vim/bundle/vim-ruby"]
 	path = .vim/bundle/vim-ruby
 	url = https://github.com/vim-ruby/vim-ruby
+[submodule ".vim/bundle/vim-ember-hbs"]
+	path = .vim/bundle/vim-ember-hbs
+	url = https://github.com/joukevandermaas/vim-ember-hbs
