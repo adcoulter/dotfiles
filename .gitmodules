@@ -19,3 +19,6 @@
 [submodule ".vim/bundle/vim-ember-hbs"]
 	path = .vim/bundle/vim-ember-hbs
 	url = https://github.com/joukevandermaas/vim-ember-hbs
+[submodule ".vim/bundle/vim-sleuth"]
+	path = .vim/bundle/vim-sleuth
+	url = https://github.com/tpope/vim-sleuth
