@@ -13,6 +13,9 @@
 [submodule ".vim/bundle/vim-ruby"]
 	path = .vim/bundle/vim-ruby
 	url = https://github.com/vim-ruby/vim-ruby
+[submodule ".vim/bundle/vim-javascript"]
+	path = .vim/bundle/vim-javascript
+	url = https://github.com/pangloss/vim-javascript
 [submodule ".vim/bundle/vim-ember-hbs"]
 	path = .vim/bundle/vim-ember-hbs
 	url = https://github.com/joukevandermaas/vim-ember-hbs
