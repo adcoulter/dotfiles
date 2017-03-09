@@ -22,6 +22,8 @@ set smartcase
 noremap <silent><Leader>/ :noh <CR>
 nnoremap <leader><space> :noh<cr>
 
+au BufNewFile,BufRead *.nghaml set filetype=haml
+
 "Automatically remove trailing whitespace
 autocmd FileType ruby,python,javascript,java autocmd BufWritePre <buffer> :%s/\s\+$//e
 
