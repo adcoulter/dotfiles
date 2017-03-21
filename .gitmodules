@@ -22,3 +22,6 @@
 [submodule ".vim/bundle/vim-sleuth"]
 	path = .vim/bundle/vim-sleuth
 	url = https://github.com/tpope/vim-sleuth
+[submodule ".emacs.d"]
+	path = .emacs.d
+	url = git@github.com:tjefferson08/dotemacs.git
