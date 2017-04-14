@@ -21,11 +21,20 @@ PATH=$PATH:$HOME/.rvm/bin
 source $HOME/.maven_credentials
 # END-MAVEN-SETTINGS
 
+function title {
+    echo -ne "\033]0;"$*"\007"
+  }
+
 alias pgstart="pg_ctl -D /usr/local/var/postgres -l /usr/local/var/postgres/server.log start"
 alias pgstop="pg_ctl -D /usr/local/var/postgres stop -s -m fast"
 
 alias dock="docker-compose"
 alias dockrun="docker-compose run web"
-alias dockbyebug="dockrun bin/byebug -R $(docker-machine ip default):3001"
+alias sam="cd ~/workspace/sam; gup; rake db:migrate; title SAM; bin/rails s -p 3001"
+alias nag="cd ~/workspace/generator; gup; rake db:migrate; title NAG; bin/rails s -p 3003"
+
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
